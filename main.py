@@ -9,8 +9,8 @@ st.title('Team Rankings')
 # Define initial data
 data = {
     'Team Name': ['Goldstein/Seibold', 'Schneider/Seef', 'Leidner/Gator', 'Gutty/Bizz', 'Joey/Misha', 'AA/Dean', 'Ebe/Tumbo', 'Tito/Wil', 'Wein/Rauch', 'Meis/D Rose', 'Liffman/Kuhlkin', 'Galper/Garber'],
-    'Stock': ['AMC', 'AAL', 'UPS', 'PLTR', 'AAL', 'SVFD', 'RL', 'LCID', 'TDS', 'WYNN', 'SWKS', 'MF'],
-    'Price Bought': [4.93,15.84,180.94,18.20,15.84,.6330,131.74,6.62,14.84,104.18,109.30,1.98], # Fill in with actual bought prices
+    'Stock': ['AMC', 'AAL', 'UPS', 'PLTR', 'AAL', 'SOXL', 'RL', 'LCID', 'TDS', 'WYNN', 'SWKS', 'MF'],
+    'Price Bought': [4.93,15.84,180.94,18.20,15.84,24.88,131.74,6.62,14.84,104.18,109.30,1.98], # Fill in with actual bought prices
     'Current Price': [0.0]*12,
     'Gain': [0.0]*12
 }
@@ -41,3 +41,5 @@ if net_gain > 0:
     st.write("Net Gain:", net_gain)
 else:
     st.write("Net Loss:", net_gain)
+
+
