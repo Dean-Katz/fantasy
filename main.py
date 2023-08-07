@@ -36,10 +36,8 @@ st.table(df.assign(hack='').set_index('hack'))
 
 net_gain = data['Gain'].sum()
 
-# Assuming you are using Streamlit, you can display the result using st.write()
-import streamlit as st
-
+# Use Streamlit's st.write() function to display the result based on the net_gain value
 if net_gain > 0:
     st.write("Net Gain:", net_gain)
 else:
-    st.write*("Net Loss", net_gain)
+    st.write("Net Loss:", net_gain)
