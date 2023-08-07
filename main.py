@@ -3,15 +3,16 @@ import yfinance as yf
 import pandas as pd
 import numpy as np
 
+
 st.title('Team Rankings')
 
 # Define initial data
 data = {
-    'Team Name': ['Goldstein/Seibold', 'Schneider/Seef', 'Leidner/Gator', 'Gutty/Bizz', 'Joey/Misha', 'AA/Dean', 'Ebe/Tumbo', 'Tito/Wil', 'Wein/Rauch', 'Meis/D Rose', 'Alexi/Kuhlkin'],
-    'Stock': ['AMC', 'AMC', 'AMC', 'AMC', 'AMC', 'AMC', 'AMC', 'AMC', 'AMC', 'AMC', 'AMC'],
-    'Price Bought': [0,0,0,0,0,0,0,0,0,0,0],  # Replace with actual bought prices
-    'Current Price': [0, 0, 0,0,0,0,0,0,0,0,0],
-    'Gain': [0, 0, 0,0,0,0,0,0,0,0,0]
+    'Team Name': ['Goldstein/Seibold', 'Schneider/Seef', 'Leidner/Gator', 'Gutty/Bizz', 'Joey/Misha', 'AA/Dean', 'Ebe/Tumbo', 'Tito/Wil', 'Wein/Rauch', 'Meis/D Rose', 'Liffman/Kuhlkin', 'Galper/Garber'],
+    'Stock': ['AMC', 'AAL', 'UPS', 'PLTR', 'AAL', 'SOXL', 'RL', 'LCID', 'TDS', 'WYNN', 'SWKS', 'MF'],
+    'Price Bought': [0.0]*12,  # Fill in with actual bought prices
+    'Current Price': [0.0]*12,
+    'Gain': [0.0]*12
 }
 
 df = pd.DataFrame(data)
