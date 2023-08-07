@@ -2,7 +2,7 @@ import streamlit as st
 import yfinance as yf
 import pandas as pd
 import numpy as np
-
+import finnhub
 
 st.title('Team Rankings')
 
@@ -18,8 +18,8 @@ data = {
 df = pd.DataFrame(data)
 
 def get_current_price(stock):
-    ticker = yf.Ticker(stock)
-    return ticker.history().tail(1)['Close'].iloc[0]
+    finnhub_client = finnhub.Client(api_key="cj819ehr01qkj2usugjgcj819ehr01qkj2usugk0")
+    return finnhub_client.quote(stock)['c']
 
 # Refresh data on button click
 if st.button('Update Rankings'):
