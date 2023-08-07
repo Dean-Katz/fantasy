@@ -34,7 +34,7 @@ if st.button('Update Rankings'):
 
 st.table(df.assign(hack='').set_index('hack'))
 
-net_gain = data['Gain'].sum()
+net_gain = df['Gain'].sum()
 
 # Use Streamlit's st.write() function to display the result based on the net_gain value
 if net_gain > 0:
